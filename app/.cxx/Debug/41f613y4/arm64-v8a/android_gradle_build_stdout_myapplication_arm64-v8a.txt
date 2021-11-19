@@ -1,0 +1,42 @@
+ninja: Entering directory `/Users/locdx/AndroidStudioProjects/MyApplication/app/.cxx/Debug/41f613y4/arm64-v8a'
+[1/2] Building CXX object CMakeFiles/myapplication.dir/native-lib.cpp.o
+/Users/locdx/AndroidStudioProjects/MyApplication/app/src/main/cpp/native-lib.cpp:106:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+1 warning generated.
+[2/2] Linking CXX shared library /Users/locdx/AndroidStudioProjects/MyApplication/app/build/intermediates/cxx/Debug/41f613y4/obj/arm64-v8a/libmyapplication.so
+FAILED: /Users/locdx/AndroidStudioProjects/MyApplication/app/build/intermediates/cxx/Debug/41f613y4/obj/arm64-v8a/libmyapplication.so 
+: && /Users/locdx/Library/Android/sdk/ndk/21.4.7075529/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang++ --target=aarch64-none-linux-android26 --gcc-toolchain=/Users/locdx/Library/Android/sdk/ndk/21.4.7075529/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/locdx/Library/Android/sdk/ndk/21.4.7075529/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -fPIC -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -Wl,--exclude-libs,libgcc.a -Wl,--exclude-libs,libgcc_real.a -Wl,--exclude-libs,libatomic.a -static-libstdc++ -Wl,--build-id -Wl,--fatal-warnings -Wl,--no-undefined -Qunused-arguments -shared -Wl,-soname,libmyapplication.so -o /Users/locdx/AndroidStudioProjects/MyApplication/app/build/intermediates/cxx/Debug/41f613y4/obj/arm64-v8a/libmyapplication.so CMakeFiles/myapplication.dir/native-lib.cpp.o  -llog -latomic -lm && :
+CMakeFiles/myapplication.dir/native-lib.cpp.o: In function `Java_com_courtneyshaw_myapplication_MainActivity_stringFromJNI':
+/Users/locdx/AndroidStudioProjects/MyApplication/app/src/main/cpp/native-lib.cpp:40: undefined reference to `FMOD::System::init(int, unsigned int, void*)'
+/Users/locdx/AndroidStudioProjects/MyApplication/app/src/main/cpp/native-lib.cpp:44: undefined reference to `FMOD::System::createSound(char const*, unsigned int, FMOD_CREATESOUNDEXINFO*, FMOD::Sound**)'
+/Users/locdx/AndroidStudioProjects/MyApplication/app/src/main/cpp/native-lib.cpp:48: undefined reference to `FMOD::System::playSound(FMOD::Sound*, FMOD::ChannelGroup*, bool, FMOD::Channel**)'
+/Users/locdx/AndroidStudioProjects/MyApplication/app/src/main/cpp/native-lib.cpp:52: undefined reference to `FMOD::System::createDSPByType(FMOD_DSP_TYPE, FMOD::DSP**)'
+/Users/locdx/AndroidStudioProjects/MyApplication/app/src/main/cpp/native-lib.cpp:54: undefined reference to `FMOD::DSP::setParameterFloat(int, float)'
+/Users/locdx/AndroidStudioProjects/MyApplication/app/src/main/cpp/native-lib.cpp:56: undefined reference to `FMOD::System::playSound(FMOD::Sound*, FMOD::ChannelGroup*, bool, FMOD::Channel**)'
+/Users/locdx/AndroidStudioProjects/MyApplication/app/src/main/cpp/native-lib.cpp:57: undefined reference to `FMOD::ChannelControl::addDSP(int, FMOD::DSP*)'
+/Users/locdx/AndroidStudioProjects/MyApplication/app/src/main/cpp/native-lib.cpp:60: undefined reference to `FMOD::System::createDSPByType(FMOD_DSP_TYPE, FMOD::DSP**)'
+/Users/locdx/AndroidStudioProjects/MyApplication/app/src/main/cpp/native-lib.cpp:61: undefined reference to `FMOD::DSP::setParameterFloat(int, float)'
+/Users/locdx/AndroidStudioProjects/MyApplication/app/src/main/cpp/native-lib.cpp:62: undefined reference to `FMOD::System::playSound(FMOD::Sound*, FMOD::ChannelGroup*, bool, FMOD::Channel**)'
+/Users/locdx/AndroidStudioProjects/MyApplication/app/src/main/cpp/native-lib.cpp:63: undefined reference to `FMOD::ChannelControl::addDSP(int, FMOD::DSP*)'
+/Users/locdx/AndroidStudioProjects/MyApplication/app/src/main/cpp/native-lib.cpp:66: undefined reference to `FMOD::System::createDSPByType(FMOD_DSP_TYPE, FMOD::DSP**)'
+/Users/locdx/AndroidStudioProjects/MyApplication/app/src/main/cpp/native-lib.cpp:67: undefined reference to `FMOD::DSP::setParameterFloat(int, float)'
+/Users/locdx/AndroidStudioProjects/MyApplication/app/src/main/cpp/native-lib.cpp:68: undefined reference to `FMOD::System::playSound(FMOD::Sound*, FMOD::ChannelGroup*, bool, FMOD::Channel**)'
+/Users/locdx/AndroidStudioProjects/MyApplication/app/src/main/cpp/native-lib.cpp:69: undefined reference to `FMOD::ChannelControl::addDSP(int, FMOD::DSP*)'
+/Users/locdx/AndroidStudioProjects/MyApplication/app/src/main/cpp/native-lib.cpp:73: undefined reference to `FMOD::System::playSound(FMOD::Sound*, FMOD::ChannelGroup*, bool, FMOD::Channel**)'
+/Users/locdx/AndroidStudioProjects/MyApplication/app/src/main/cpp/native-lib.cpp:74: undefined reference to `FMOD::Channel::getFrequency(float*)'
+/Users/locdx/AndroidStudioProjects/MyApplication/app/src/main/cpp/native-lib.cpp:76: undefined reference to `FMOD::Channel::setFrequency(float)'
+/Users/locdx/AndroidStudioProjects/MyApplication/app/src/main/cpp/native-lib.cpp:79: undefined reference to `FMOD::System::createDSPByType(FMOD_DSP_TYPE, FMOD::DSP**)'
+/Users/locdx/AndroidStudioProjects/MyApplication/app/src/main/cpp/native-lib.cpp:80: undefined reference to `FMOD::DSP::setParameterFloat(int, float)'
+/Users/locdx/AndroidStudioProjects/MyApplication/app/src/main/cpp/native-lib.cpp:81: undefined reference to `FMOD::DSP::setParameterFloat(int, float)'
+/Users/locdx/AndroidStudioProjects/MyApplication/app/src/main/cpp/native-lib.cpp:82: undefined reference to `FMOD::System::playSound(FMOD::Sound*, FMOD::ChannelGroup*, bool, FMOD::Channel**)'
+/Users/locdx/AndroidStudioProjects/MyApplication/app/src/main/cpp/native-lib.cpp:83: undefined reference to `FMOD::ChannelControl::addDSP(int, FMOD::DSP*)'
+/Users/locdx/AndroidStudioProjects/MyApplication/app/src/main/cpp/native-lib.cpp:90: undefined reference to `FMOD::System::update()'
+/Users/locdx/AndroidStudioProjects/MyApplication/app/src/main/cpp/native-lib.cpp:95: undefined reference to `FMOD::ChannelControl::isPlaying(bool*)'
+/Users/locdx/AndroidStudioProjects/MyApplication/app/src/main/cpp/native-lib.cpp:103: undefined reference to `FMOD::Sound::release()'
+/Users/locdx/AndroidStudioProjects/MyApplication/app/src/main/cpp/native-lib.cpp:104: undefined reference to `FMOD::System::close()'
+/Users/locdx/AndroidStudioProjects/MyApplication/app/src/main/cpp/native-lib.cpp:105: undefined reference to `FMOD::System::release()'
+CMakeFiles/myapplication.dir/native-lib.cpp.o: In function `FMOD::System_Create(FMOD::System**)':
+/Users/locdx/AndroidStudioProjects/MyApplication/app/src/main/cpp/inc/fmod.hpp:46: undefined reference to `FMOD_System_Create'
+clang++: error: linker command failed with exit code 1 (use -v to see invocation)
+ninja: build stopped: subcommand failed.

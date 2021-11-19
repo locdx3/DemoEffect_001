@@ -1,0 +1,40 @@
+{
+  "stringTable": {},
+  "buildFiles": [
+    "/Users/locdx/AndroidStudioProjects/MyApplication/app/src/main/cpp/CMakeLists.txt"
+  ],
+  "cleanCommandsComponents": [
+    [
+      "/Users/locdx/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja",
+      "-C",
+      "/Users/locdx/AndroidStudioProjects/MyApplication/app/.cxx/Debug/41f613y4/x86",
+      "clean"
+    ]
+  ],
+  "buildTargetsCommandComponents": [
+    "/Users/locdx/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja",
+    "-C",
+    "/Users/locdx/AndroidStudioProjects/MyApplication/app/.cxx/Debug/41f613y4/x86",
+    "{LIST_OF_TARGETS_TO_BUILD}"
+  ],
+  "libraries": {
+    "myapplication-Debug-x86": {
+      "buildCommandComponents": [
+        "/Users/locdx/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja",
+        "-C",
+        "/Users/locdx/AndroidStudioProjects/MyApplication/app/.cxx/Debug/41f613y4/x86",
+        "myapplication"
+      ],
+      "buildType": "debug",
+      "abi": "x86",
+      "artifactName": "myapplication",
+      "output": "/Users/locdx/AndroidStudioProjects/MyApplication/app/build/intermediates/cxx/Debug/41f613y4/obj/x86/libmyapplication.so",
+      "runtimeFiles": []
+    }
+  },
+  "toolchains": {},
+  "cFileExtensions": [],
+  "cppFileExtensions": [
+    "cpp"
+  ]
+}
